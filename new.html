@@ -195,9 +195,7 @@
     }
 
     function setupMusic() {
-      let started = false;
-      document.body.addEventListener('click', () => {
-        if (started) return;
+      let started = true;
         const audio = new Audio('./e.mp3');
         audio.loop = true;
         audio.play().catch(() => console.log("Không thể phát nhạc tự động."));
@@ -214,3 +212,4 @@
   </script>
 </body>
 </html>
+
