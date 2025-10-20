@@ -267,13 +267,7 @@
         }
       }, { passive: true });
     }
-  
-    function setupMusic() {
-      let started = true;
-      const audio = new Audio('./a.mp3');
-      audio.loop = true;
-      audio.play().catch(() => {console.log("Không thể phát nhạc tự động.")});
-    }
+
   
     window.addEventListener('DOMContentLoaded', () => {
       startStars();
@@ -286,7 +280,7 @@ let audio;
 
 playBtn.addEventListener('click', () => {
   if (!audio) {
-    audio = new Audio('./e.mp3'); // Đảm bảo file e.mp3 nằm cùng thư mục
+    audio = new Audio('./a.mp3'); // Đảm bảo file e.mp3 nằm cùng thư mục
     audio.loop = true;
   }
 
